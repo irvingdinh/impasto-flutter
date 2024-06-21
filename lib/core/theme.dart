@@ -147,4 +147,7 @@ class Freud {
   static const Color red80 = Color(0xFF9F1239);
   static const Color red90 = Color(0xFF881337);
   static const Color red100 = Color(0xFF4C0519);
+
+  // Misc
+  static const int space = 16;
 }

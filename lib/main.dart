@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:impasto/core/theme.dart';
+import 'package:impasto/crafts/screens/index/index.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -9,9 +12,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Impasto: AI Art & Avatar',
-      home: SizedBox(),
+      theme: theme,
+      darkTheme: darkTheme,
+      home: const IndexScreen(),
     );
   }
 }

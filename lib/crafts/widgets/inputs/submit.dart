@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:impasto/core/theme.dart';
 
 class CraftInputSubmit extends StatelessWidget {
-  const CraftInputSubmit({super.key});
+  const CraftInputSubmit({
+    super.key,
+    required this.onTap,
+  });
+
+  final void Function() onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -19,13 +24,11 @@ class CraftInputSubmit extends StatelessWidget {
         right: padding.right + Freud.space,
       ),
       child: InkWell(
-        onTap: () {
-          //
-        },
+        onTap: onTap,
         child: Container(
           decoration: BoxDecoration(
-            color: isLight ? Freud.brown80 : Freud.brown80,
-            borderRadius: BorderRadius.circular(Freud.borderRadius),
+            color: isLight ? Freud.brown80 : Freud.brown60,
+            borderRadius: BorderRadius.circular(Freud.borderRadiusCircle),
           ),
           width: double.infinity,
           height: 64,
@@ -33,9 +36,9 @@ class CraftInputSubmit extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Submit',
+                'Generate',
                 style: theme.textTheme.bodyLarge!.copyWith(
-                  color: isLight ? Colors.white : Colors.black,
+                  color: isLight ? Colors.white : Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),

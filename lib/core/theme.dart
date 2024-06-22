@@ -162,4 +162,5 @@ class Freud {
   static const double space = 16;
   static const double borderRadius = 16;
   static const double borderRadiusSmall = 8;
+  static const double borderRadiusCircle = 9999;
 }

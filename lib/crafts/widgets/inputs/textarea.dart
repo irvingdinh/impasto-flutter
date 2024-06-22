@@ -42,7 +42,7 @@ class CraftInputTextarea extends StatelessWidget {
               ),
               contentPadding: const EdgeInsets.all(Freud.space),
               filled: true,
-              fillColor: isLight ? Freud.gray20 : Freud.brown90,
+              fillColor: isLight ? Colors.white : Freud.brown90,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(Freud.borderRadius),
                 borderSide: BorderSide.none,

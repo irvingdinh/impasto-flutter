@@ -31,6 +31,12 @@ class _ShowScreenState extends State<ShowScreen> {
     }
   }
 
+  void onSubmit() {
+    for (final input in widget.craft.inputs) {
+      inputToController[input.name];
+    }
+  }
+
   @override
   void dispose() {
     inputToController.forEach((key, value) {
@@ -80,9 +86,10 @@ class _ShowScreenState extends State<ShowScreen> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
+                    const SizedBox(height: Freud.space),
                     ...fields,
                     const SizedBox(height: Freud.space),
-                    const CraftInputSubmit(),
+                    CraftInputSubmit(onTap: onSubmit),
                   ],
                 ),
               ),

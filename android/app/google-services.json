@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "813456142720",
+    "project_id": "impasto-prd",
+    "storage_bucket": "impasto-prd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813456142720:android:bb095ae81febe053919165",
+        "android_client_info": {
+          "package_name": "ai.impasto.impasto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMsAR7UDbXTEc-hqf1FkXGQKl7lA9jdAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

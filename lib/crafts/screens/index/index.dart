@@ -4,6 +4,7 @@ import 'package:impasto/core/theme.dart';
 import 'package:impasto/core/widgets/app_bar.dart';
 import 'package:impasto/crafts/data/dummy.dart';
 import 'package:impasto/crafts/models/craft.dart';
+import 'package:impasto/crafts/screens/show/show.dart';
 
 class IndexScreen extends StatelessWidget {
   const IndexScreen({super.key});
@@ -60,12 +61,18 @@ class CraftListItem extends StatelessWidget {
 
     return GestureDetector(
       onTap: () {
-        //
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) {
+              return ShowScreen(craft: craft);
+            },
+          ),
+        );
       },
       child: Container(
         padding: const EdgeInsets.all(Freud.space),
         decoration: BoxDecoration(
-          color: isLight ? Freud.gray20 : Freud.brown90,
+          color: isLight ? Colors.white : Freud.brown90,
           borderRadius: BorderRadius.circular(Freud.borderRadius),
         ),
         margin: EdgeInsets.only(
@@ -76,7 +83,7 @@ class CraftListItem extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: isLight ? Freud.gray30 : Freud.brown80,
+                color: isLight ? Freud.brown10 : Freud.brown100,
                 borderRadius: BorderRadius.circular(Freud.borderRadiusSmall),
               ),
               width: 48,

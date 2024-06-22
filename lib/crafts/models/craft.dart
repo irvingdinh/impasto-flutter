@@ -3,7 +3,7 @@ class Craft {
     required this.slug,
     required this.title,
     required this.description,
-    required this.input,
+    required this.inputs,
   });
 
   final String slug;
@@ -12,7 +12,7 @@ class Craft {
 
   final String description;
 
-  final List<CraftInput> input;
+  final List<CraftInput> inputs;
 }
 
 class CraftInput {

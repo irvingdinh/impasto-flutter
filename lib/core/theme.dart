@@ -20,6 +20,11 @@ final theme = ThemeData.light().copyWith(
       fontSize: 20,
       fontWeight: FontWeight.w800,
     ),
+    bodyLarge: light.textTheme.bodyLarge!.copyWith(
+      color: Freud.brown80,
+      fontSize: 20,
+      fontWeight: FontWeight.w500,
+    ),
     bodyMedium: light.textTheme.bodyMedium!.copyWith(
       color: Freud.brown80,
       fontSize: 16,
@@ -49,6 +54,11 @@ final darkTheme = ThemeData.dark().copyWith(
       color: Colors.white,
       fontSize: 20,
       fontWeight: FontWeight.w800,
+    ),
+    bodyLarge: dark.textTheme.bodyLarge!.copyWith(
+      color: Colors.white,
+      fontSize: 20,
+      fontWeight: FontWeight.w500,
     ),
     bodyMedium: dark.textTheme.bodyMedium!.copyWith(
       color: Colors.white,
